@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300" role="img" aria-labelledby="title desc">
+  <title id="title">Internal Asset Sharing System (ENV-09)</title>
+  <desc id="desc">Full-stack system for lending idle university equipment between departments, with savings metrics. Java 21, Spring Boot 3, React 18, SQL Server.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121430"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#818cf8"/>
+    </marker>
+  </defs>
+
+  <rect width="600" height="300" rx="16" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="599" height="299" rx="15.5" fill="none" stroke="#30363d"/>
+  <rect x="0" y="22" width="4" height="256" rx="2" fill="url(#bar)"/>
+
+  <!-- Lifecycle illustration: rotating ring of states around a box -->
+  <circle cx="520" cy="78" r="50" fill="#0f1230" stroke="#30363d"/>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 520 78" to="360 520 78" dur="14s" repeatCount="indefinite"/>
+    <path d="M520,44 A34,34 0 0,1 553,70" fill="none" stroke="#818cf8" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <path d="M550,96 A34,34 0 0,1 512,111" fill="none" stroke="#818cf8" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <path d="M492,98 A34,34 0 0,1 498,52" fill="none" stroke="#818cf8" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <circle cx="520" cy="44" r="3.5" fill="#22d3ee"/>
+    <circle cx="550" cy="96" r="3.5" fill="#22d3ee"/>
+    <circle cx="492" cy="98" r="3.5" fill="#22d3ee"/>
+  </g>
+  <!-- box -->
+  <g stroke="#e6edf3" stroke-width="1.6" stroke-linejoin="round" fill="none">
+    <path d="M520,64 l14,7 v15 l-14,7 l-14,-7 v-15 z" fill="#818cf8" fill-opacity="0.15"/>
+    <path d="M506,71 l14,7 l14,-7 M520,78 v15"/>
+  </g>
+
+  <!-- Text -->
+  <g font-family="ui-monospace,'JetBrains Mono','Cascadia Code',Consolas,Menlo,monospace" font-size="12" fill="#8b949e" letter-spacing="1">
+    <text x="30" y="44"><tspan fill="#818cf8">●</tspan> FULL-STACK · COURSE CAPSTONE</text>
+  </g>
+  <g font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif">
+    <text x="30" y="80" font-size="25" font-weight="700" fill="#f0f6fc">Internal Asset Sharing System</text>
+    <text x="30" y="108" font-size="14.5" fill="#c9d1d9">Lets university departments lend idle equipment instead</text>
+    <text x="30" y="128" font-size="14.5" fill="#c9d1d9">of buying new: declare → book → approve → hand over →</text>
+    <text x="30" y="148" font-size="14.5" fill="#c9d1d9">return, with savings metrics (CAI, NCAV) for managers.</text>
+    <text x="30" y="176" font-size="14" fill="#8b949e" font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Yu Gothic UI','Yu Gothic',Meiryo,'Noto Sans JP','Noto Sans CJK JP',sans-serif">学内の遊休設備を部署間で共有・再利用する資産管理システム</text>
+  </g>
+  <g font-family="ui-monospace,'JetBrains Mono','Cascadia Code',Consolas,Menlo,monospace" font-size="12" fill="#8b949e">
+    <text x="30" y="204">4 roles · 17 use cases · 21 business rules · nightly jobs</text>
+  </g>
+
+  <!-- Tech pills -->
+  <g font-family="ui-monospace,'JetBrains Mono','Cascadia Code',Consolas,Menlo,monospace" font-size="12" text-anchor="middle" fill="#c9d1d9">
+    <rect x="30" y="226" width="78" height="26" rx="13" fill="#818cf8" fill-opacity="0.1" stroke="#818cf8" stroke-opacity="0.45"/>
+    <text x="69" y="243">Java 21</text>
+    <rect x="116" y="226" width="120" height="26" rx="13" fill="#818cf8" fill-opacity="0.1" stroke="#818cf8" stroke-opacity="0.45"/>
+    <text x="176" y="243">Spring Boot 3</text>
+    <rect x="244" y="226" width="86" height="26" rx="13" fill="#ffffff" fill-opacity="0.03" stroke="#30363d"/>
+    <text x="287" y="243">React 18</text>
+    <rect x="338" y="226" width="64" height="26" rx="13" fill="#ffffff" fill-opacity="0.03" stroke="#30363d"/>
+    <text x="370" y="243">Vite</text>
+    <rect x="410" y="226" width="160" height="26" rx="13" fill="#ffffff" fill-opacity="0.03" stroke="#30363d"/>
+    <text x="490" y="243">SQL Server 2022</text>
+  </g>
+  <text x="570" y="278" text-anchor="end" font-family="ui-monospace,'JetBrains Mono','Cascadia Code',Consolas,Menlo,monospace" font-size="11.5" fill="#6e7681">view repo ↗</text>
+</svg>

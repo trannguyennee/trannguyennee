@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">Trần Nguyên — DevSecOps Engineer in the making</title>
+  <desc id="desc">Animated DevSecOps infinity loop: plan, code, build, test, release, deploy, operate and monitor, with security at the center.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0f1c"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="loopStroke" x1="690" y1="0" x2="1090" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.74" cy="0.5" r="0.42">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Figure-eight: left lobe = DEV, right lobe = OPS, crossing point = SEC -->
+    <path id="loop" pathLength="1000" d="M890,170 C835,70 690,70 690,170 C690,270 835,270 890,170 C945,70 1090,70 1090,170 C1090,270 945,270 890,170 Z"/>
+    <clipPath id="typing">
+      <rect x="56" y="44" width="400" height="28">
+        <animate attributeName="width" values="0;0;400" keyTimes="0;0.15;1" dur="2.4s" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="340" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="340" rx="18" fill="url(#grid)"/>
+  <rect width="1200" height="340" rx="18" fill="url(#halo)"/>
+  <rect x="0.5" y="0.5" width="1199" height="339" rx="17.5" fill="none" stroke="#30363d"/>
+
+  <!-- Terminal line (typing) -->
+  <g clip-path="url(#typing)" font-family="ui-monospace,'JetBrains Mono','Cascadia Code',Consolas,Menlo,monospace" font-size="15">
+    <text x="60" y="64" textLength="378" lengthAdjust="spacing"><tspan fill="#34d399">trannguyen@hcmc</tspan><tspan fill="#8b949e">:~$ </tspan><tspan fill="#e6edf3">./pipeline --shift-left</tspan></text>
+  </g>
+  <rect x="442" y="50" width="9" height="18" fill="#22d3ee">
+    <animate attributeName="x" values="60;60;442" keyTimes="0;0.15;1" dur="2.4s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;0;1" dur="1.1s" begin="2.4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Name + role -->
+  <g font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif">
+    <g>
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.55;1" dur="1.6s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0 14;0 14;0 0" keyTimes="0;0.55;1" dur="1.6s" fill="freeze"/>
+      <text x="58" y="128" font-size="54" font-weight="800" fill="#f0f6fc" letter-spacing="1">Trần Nguyên</text>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.65;1" dur="2s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0 12;0 12;0 0" keyTimes="0;0.65;1" dur="2s" fill="freeze"/>
+      <text x="60" y="168" font-size="25" font-weight="700" fill="url(#accent)">DevSecOps Engineer<tspan fill="#8b949e" font-weight="400"> — in the making</tspan></text>
+      <text x="60" y="202" font-size="17" fill="#c9d1d9" font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Yu Gothic UI','Yu Gothic',Meiryo,'Noto Sans JP','Noto Sans CJK JP',sans-serif">セキュリティを、開発の最初から。<tspan fill="#8b949e" font-size="14">  security from the very first commit</tspan></text>
+    </g>
+  </g>
+
+  <!-- Focus pills -->
+  <g font-family="ui-monospace,'JetBrains Mono','Cascadia Code',Consolas,Menlo,monospace" font-size="12.5" fill="#c9d1d9" text-anchor="middle">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.7;1" dur="2.4s" fill="freeze"/>
+    <rect x="60" y="226" width="166" height="28" rx="14" fill="#22d3ee" fill-opacity="0.08" stroke="#22d3ee" stroke-opacity="0.45"/>
+    <text x="143" y="244.5">Shift-left Security</text>
+    <rect x="236" y="226" width="70" height="28" rx="14" fill="#ffffff" fill-opacity="0.03" stroke="#30363d"/>
+    <text x="271" y="244.5">CI/CD</text>
+    <rect x="316" y="226" width="110" height="28" rx="14" fill="#ffffff" fill-opacity="0.03" stroke="#30363d"/>
+    <text x="371" y="244.5">Cloud &amp; IaC</text>
+    <rect x="436" y="226" width="104" height="28" rx="14" fill="#ffffff" fill-opacity="0.03" stroke="#30363d"/>
+    <text x="488" y="244.5">Automation</text>
+  </g>
+
+  <!-- Location line -->
+  <g font-family="ui-monospace,'JetBrains Mono','Cascadia Code',Consolas,Menlo,monospace" font-size="13" fill="#8b949e">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.75;1" dur="2.6s" fill="freeze"/>
+    <circle cx="65" cy="290" r="4" fill="#34d399">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="78" y="294">Ho Chi Minh City, Vietnam <tspan fill="#22d3ee">──▶</tspan> <tspan fill="#e6edf3">Japan</tspan>   ·   open to internship / fresher roles</text>
+  </g>
+
+  <!-- DevSecOps loop -->
+  <rect x="640" y="30" width="520" height="280" rx="14" fill="#ffffff" fill-opacity="0.015" stroke="#ffffff" stroke-opacity="0.04"/>
+  <use href="#loop" fill="none" stroke="#21262d" stroke-width="10" stroke-linecap="round"/>
+  <use href="#loop" fill="none" stroke="url(#loopStroke)" stroke-width="2" stroke-opacity="0.55"/>
+
+  <!-- Light trails -->
+  <use href="#loop" fill="none" stroke="#22d3ee" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="110 890" filter="url(#glow)">
+    <animate attributeName="stroke-dashoffset" values="110;-890" dur="7s" repeatCount="indefinite"/>
+  </use>
+  <use href="#loop" fill="none" stroke="#818cf8" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="110 890" filter="url(#glow)">
+    <animate attributeName="stroke-dashoffset" values="110;-890" dur="7s" begin="-3.5s" repeatCount="indefinite"/>
+  </use>
+
+  <!-- Stage nodes -->
+  <g fill="#0d1117" stroke="url(#loopStroke)" stroke-width="2">
+    <circle cx="822.5" cy="107" r="5"/>
+    <circle cx="713.5" cy="113.8" r="5"/>
+    <circle cx="690" cy="170" r="5"/>
+    <circle cx="795.8" cy="242" r="5"/>
+    <circle cx="957.5" cy="107" r="5"/>
+    <circle cx="1066.5" cy="113.8" r="5"/>
+    <circle cx="1090" cy="170" r="5"/>
+    <circle cx="984.2" cy="242" r="5"/>
+  </g>
+
+  <!-- Stage labels -->
+  <g font-family="ui-monospace,'JetBrains Mono','Cascadia Code',Consolas,Menlo,monospace" font-size="11.5" fill="#8b949e" letter-spacing="1.5">
+    <text x="822" y="90" text-anchor="middle">PLAN</text>
+    <text x="713" y="97" text-anchor="middle">CODE</text>
+    <text x="676" y="174" text-anchor="end">BUILD</text>
+    <text x="796" y="270" text-anchor="middle">TEST</text>
+    <text x="958" y="90" text-anchor="middle">RELEASE</text>
+    <text x="1067" y="97" text-anchor="middle">DEPLOY</text>
+    <text x="1104" y="174">OPERATE</text>
+    <text x="984" y="270" text-anchor="middle">MONITOR</text>
+  </g>
+  <g font-family="'Segoe UI',Inter,-apple-system,Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="4" fill="#ffffff" fill-opacity="0.18" text-anchor="middle">
+    <text x="772" y="176">DEV</text>
+    <text x="1010" y="176">OPS</text>
+  </g>
+
+  <!-- Security at the core -->
+  <circle cx="890" cy="170" r="22" fill="none" stroke="#34d399" stroke-width="1.5">
+    <animate attributeName="r" values="22;40" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;0" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="890" cy="170" r="22" fill="#0d1117" stroke="#34d399" stroke-width="2"/>
+  <path d="M890,157 l11,4.5 v7.5 c0,7.5 -4.6,12.2 -11,15 c-6.4,-2.8 -11,-7.5 -11,-15 v-7.5 z" fill="#34d399" fill-opacity="0.12" stroke="#34d399" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M885,170.5 l3.6,3.6 l6.8,-7.2" fill="none" stroke="#34d399" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="890" y="216" text-anchor="middle" font-family="ui-monospace,'JetBrains Mono','Cascadia Code',Consolas,Menlo,monospace" font-size="11" letter-spacing="3" fill="#34d399">SEC</text>
+
+  <!-- Travelling packets -->
+  <circle r="5" fill="#e6fbff" filter="url(#glow)">
+    <animateMotion dur="7s" repeatCount="indefinite" calcMode="paced"><mpath href="#loop"/></animateMotion>
+  </circle>
+  <circle r="5" fill="#eef0ff" filter="url(#glow)">
+    <animateMotion dur="7s" begin="-3.5s" repeatCount="indefinite" calcMode="paced"><mpath href="#loop"/></animateMotion>
+  </circle>
+</svg>

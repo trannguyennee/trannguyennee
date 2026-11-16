@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300" role="img" aria-labelledby="title desc">
+  <title id="title">Urban Incident Alert Map</title>
+  <desc id="desc">WebGIS platform where citizens report urban incidents on a live map and police or support teams triage them. Django, GeoDjango, PostGIS, Leaflet.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1424"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+    <pattern id="map" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M18 0H0V18" fill="none" stroke="#22d3ee" stroke-opacity="0.12"/>
+    </pattern>
+    <clipPath id="radarClip"><circle cx="520" cy="78" r="50"/></clipPath>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="300" rx="16" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="599" height="299" rx="15.5" fill="none" stroke="#30363d"/>
+  <rect x="0" y="22" width="4" height="256" rx="2" fill="url(#bar)"/>
+
+  <!-- Radar map illustration -->
+  <circle cx="520" cy="78" r="50" fill="#0b1220" stroke="#30363d"/>
+  <g clip-path="url(#radarClip)">
+    <rect x="470" y="28" width="100" height="100" fill="url(#map)"/>
+    <path d="M470,98 C495,90 510,104 532,92 S560,70 572,76" fill="none" stroke="#818cf8" stroke-opacity="0.5" stroke-width="2"/>
+    <path d="M520,78 L570,78 A50,50 0 0,0 555,42 Z" fill="url(#sweep)">
+      <animateTransform attributeName="transform" type="rotate" from="0 520 78" to="360 520 78" dur="4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <circle cx="520" cy="78" r="30" fill="none" stroke="#22d3ee" stroke-opacity="0.18"/>
+  <circle cx="507" cy="88" r="3" fill="#f59e0b">
+    <animate attributeName="opacity" values="1;0.35;1" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="540" cy="66" r="3" fill="#f59e0b">
+    <animate attributeName="opacity" values="0.35;1;0.35" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+  <!-- pin -->
+  <circle cx="522" cy="74" r="6" fill="none" stroke="#f87171" stroke-width="1.5">
+    <animate attributeName="r" values="6;20" dur="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.9;0" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M522,80 c-7,-8 -10,-12 -10,-17 a10,10 0 0,1 20,0 c0,5 -3,9 -10,17 z" fill="#f87171"/>
+  <circle cx="522" cy="63" r="3.6" fill="#0d1117"/>
+
+  <!-- Text -->
+  <g font-family="ui-monospace,'JetBrains Mono','Cascadia Code',Consolas,Menlo,monospace" font-size="12" fill="#8b949e" letter-spacing="1">
+    <text x="30" y="44"><tspan fill="#22d3ee">●</tspan> TEAM PROJECT · WEBGIS · SECURED</text>
+  </g>
+  <g font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif">
+    <text x="30" y="80" font-size="25" font-weight="700" fill="#f0f6fc">Urban Incident Alert Map</text>
+    <text x="30" y="108" font-size="14.5" fill="#c9d1d9">Citizens pin incidents (flooding, broken lights, hazards)</text>
+    <text x="30" y="128" font-size="14.5" fill="#c9d1d9">on a live map with photos — police &amp; support teams</text>
+    <text x="30" y="148" font-size="14.5" fill="#c9d1d9">triage, track and resolve them from one shared view.</text>
+    <text x="30" y="176" font-size="14" fill="#8b949e" font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Yu Gothic UI','Yu Gothic',Meiryo,'Noto Sans JP','Noto Sans CJK JP',sans-serif">都市のトラブルを地図で通報・共有する WebGIS プラットフォーム</text>
+  </g>
+  <g font-family="ui-monospace,'JetBrains Mono','Cascadia Code',Consolas,Menlo,monospace" font-size="12" fill="#8b949e">
+    <text x="30" y="204">heatmap · area-scan API · CI: gitleaks · bandit · pip-audit</text>
+  </g>
+
+  <!-- Tech pills -->
+  <g font-family="ui-monospace,'JetBrains Mono','Cascadia Code',Consolas,Menlo,monospace" font-size="12" text-anchor="middle" fill="#c9d1d9">
+    <rect x="30" y="226" width="86" height="26" rx="13" fill="#22d3ee" fill-opacity="0.08" stroke="#22d3ee" stroke-opacity="0.4"/>
+    <text x="73" y="243">Django 5</text>
+    <rect x="124" y="226" width="92" height="26" rx="13" fill="#22d3ee" fill-opacity="0.08" stroke="#22d3ee" stroke-opacity="0.4"/>
+    <text x="170" y="243">GeoDjango</text>
+    <rect x="224" y="226" width="78" height="26" rx="13" fill="#ffffff" fill-opacity="0.03" stroke="#30363d"/>
+    <text x="263" y="243">PostGIS</text>
+    <rect x="310" y="226" width="78" height="26" rx="13" fill="#ffffff" fill-opacity="0.03" stroke="#30363d"/>
+    <text x="349" y="243">Leaflet</text>
+    <rect x="396" y="226" width="80" height="26" rx="13" fill="#ffffff" fill-opacity="0.03" stroke="#30363d"/>
+    <text x="436" y="243">Turf.js</text>
+    <rect x="484" y="226" width="86" height="26" rx="13" fill="#ffffff" fill-opacity="0.03" stroke="#30363d"/>
+    <text x="527" y="243">Gunicorn</text>
+  </g>
+  <text x="570" y="278" text-anchor="end" font-family="ui-monospace,'JetBrains Mono','Cascadia Code',Consolas,Menlo,monospace" font-size="11.5" fill="#6e7681">view repo ↗</text>
+</svg>
